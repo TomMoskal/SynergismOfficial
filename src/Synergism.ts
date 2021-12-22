@@ -3251,8 +3251,7 @@ function tack(dt: number) {
             if (player.autoEnhanceToggle) {
                 for (let i = 0; i < talismansUnlocked.length; ++i) {
                     if (talismansUnlocked[i]) {
-                        // TODO: Remove + 1 here when talismans are fully zero-indexed
-                        upgradedTalisman = buyTalismanEnhance(i + 1, true) || upgradedTalisman;
+                        upgradedTalisman = buyTalismanEnhance(i, true) || upgradedTalisman;
                     }
                 }
             }
@@ -3260,8 +3259,7 @@ function tack(dt: number) {
             if (player.autoFortifyToggle) {
                 for (let i = 0; i < talismansUnlocked.length; ++i) {
                     if (talismansUnlocked[i]) {
-                        // TODO: Remove + 1 here when talismans are fully zero-indexed
-                        upgradedTalisman = buyTalismanLevels(i + 1, true) || upgradedTalisman;
+                        upgradedTalisman = buyTalismanLevels(i, true) || upgradedTalisman;
                     }
                 }
             }
